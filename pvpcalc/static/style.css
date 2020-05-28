@@ -1,0 +1,22 @@
+#cont-wrapper {
+    position: absolute;
+    right: 0px;
+    margin-top: 100px;
+    margin-right: 51%;
+    width: 500px;
+    height: 700px;
+    border: 2px solid;
+}
+
+#calc-wrapper {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 51%;
+    width: 500px;
+    height: 700px;
+    border: 2px solid red;
+}
+
+h1 {
+    color: brown;
+}
