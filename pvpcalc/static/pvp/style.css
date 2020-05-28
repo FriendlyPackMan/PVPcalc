@@ -1,0 +1,41 @@
+.nickview {
+    width: 480px;
+    height: 70px;
+    padding: 10px;
+    font-size: 35px;
+    color: #6e6e6e;
+    border: none;
+    background: #cccccc31;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.nickview:focus {
+    outline: 0px;
+    background: #cccccc60;
+}
+
+.new-game {
+    width: 500px;
+    height: 70px;
+    padding: 10px;
+    font-size: 35px;
+    color: white;
+    border: none;
+    background: #F89292;
+    cursor: pointer;
+}
+
+.new-game:focus {
+    outline: 0px;
+}
+
+.new-game:hover {
+    background: rgb(233, 138, 138);
+}  
+
+#announcer {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e6e;
+}

@@ -1,0 +1,35 @@
+.calc-button {
+    width: 120px;
+    height: 100px;
+    margin: 1px;
+    font-size: 35px;
+    background: #7a7a7a6b;
+    cursor: pointer;
+    border: none;
+}
+
+.calc-button:focus {
+    outline: 0px;
+}  
+
+.calc-button:hover {
+    color: white;
+    background: #1a1a1a83;
+}  
+
+.calc-textview {
+    width: 475px;
+    height: 70px;
+    padding: 10px;
+    font-size: 35px;
+    margin: 3px;
+    margin-bottom: 20px;
+    color: #6e6e6e;
+    border: none;
+    background: #cccccc31;
+}
+
+.calc-textview:focus {
+    outline: 0px;
+    background: #cccccc60;
+}
