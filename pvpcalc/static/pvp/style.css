@@ -1,4 +1,4 @@
-.nickview {
+#nickview {
     width: 480px;
     height: 70px;
     padding: 10px;
@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-.nickview:focus {
+#nickview:focus {
     outline: 0px;
     background: #cccccc60;
 }
@@ -59,6 +59,7 @@ p {
 
 #pl-red {
     background: #F89292;
+    width: 50%;
 }
 
 #pl-green {

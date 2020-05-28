@@ -2,14 +2,14 @@
 
 {% block cont %}
 <div>
-    <input class="nickview" value="YourNick">
-    <a href="game/"><button class="new-game">New</button></a>
+    <input id="nickview" value="YourNick">
+    <a href=""><button class="new-game">New</button></a>
     <h2 id="announcer">Avaible games</h2>
     <ul class="game-list">
         {% for game in games_list %}
             <li>
                 <span>{{ game.nick_red_player }}</span>
-                <button>Join</button>
+                <button onclick="play_green('{{ game.id }}')">New</button>
             </li>
         {% endfor %}
     </ul>
