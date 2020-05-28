@@ -1,0 +1,23 @@
+{% extends '../calc/main.html' %}
+
+{% block cont %}
+<div>
+    <ul class="game-list">
+        {% for task in tasks_list %}
+            <li>
+                <span>{{ task.task }}</span>
+                <button id="task-butt-{{ task.id }}" onclick="check('{{ task.answer }}', '{{ task.id }}')" style="background: #979797;">Check</button>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
+{% block score_bar%}
+<table id="scores">
+    <tr>
+        <td id="pl-red"><p><span id="scores-red">{{ game.scores_red_player }}</span> {{ game.nick_red_player }}</p></td>
+        <td id="pl-green"><p>{{ game.nick_green_player }}<span id="scores-green">{{ game.scores_green_player }}</span></p></td>
+    </tr>
+</table>
+{% endblock %}

@@ -1,4 +1,4 @@
-.nickview {
+#nickview {
     width: 480px;
     height: 70px;
     padding: 10px;
@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-.nickview:focus {
+#nickview:focus {
     outline: 0px;
     background: #cccccc60;
 }
@@ -20,8 +20,8 @@
     height: 70px;
     padding: 10px;
     font-size: 35px;
-    color: white;
     border: none;
+    color: white;
     background: #F89292;
     cursor: pointer;
 }
@@ -39,3 +39,64 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #6e6e6e;
 }
+
+#scores {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 0px;
+    font-size: 40px;
+}
+
+p {
+    margin: 0px 50px 0px 50px;
+}
+
+#scores > tr {
+    padding: 10px;
+}
+
+#pl-red {
+    background: #F89292;
+    width: 50%;
+}
+
+#pl-green {
+    background: #95F892;
+    text-align: right;
+}
+
+.game-list {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.game-list > li {
+    margin: 5px 0px 15px 0px;
+    height: 49px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6e6e6e;
+    border-bottom: 1px dashed #95F892;
+}
+
+.game-list > li > button {
+    float: right;
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    background: #95F892;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.game-list > li > button:focus {
+    outline: 0px;
+}
+
+.game-list > li > button:hover {
+    background: rgb(130, 219, 127);
+}  
