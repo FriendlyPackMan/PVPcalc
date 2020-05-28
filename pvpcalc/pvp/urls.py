@@ -5,4 +5,5 @@ from pvp import views
 
 urlpatterns = [
     path('', views.home),
+    path('game/', views.game),
 ]

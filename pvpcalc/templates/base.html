@@ -5,18 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVPcalculator</title>
+    <title>PVP calculator</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="{% static 'calc/style.css' %}">
     <link rel="stylesheet" href="{% static 'pvp/style.css' %}">
 </head>
 <body>
-    <table id="scores">
-        <tr>
-            <td id="pl-red"><p>10</p></td>
-            <td id="pl-green"><p>10</p></td>
-        </tr>
-    </table>
+    {% block score_bar%}{% endblock %}
     <div id="cont-wrapper">
         {% block cont %}{% endblock %}
     </div>
