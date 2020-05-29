@@ -3,7 +3,7 @@
 {% block cont %}
 <div>
     <input id="nickview" value="YourNick">
-    <a href=""><button class="new-game">New</button></a>
+    <button onclick="play_red('{{ max_id }}')" class="new-game">New</button>
     <h2 id="announcer">Avaible games</h2>
     <ul class="game-list">
         {% for game in games_list %}
