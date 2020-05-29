@@ -1,3 +1,5 @@
+Звіти знаходять в гілці ver3
+
 # PVPcalc
 Project for extreme. PVP calculator
 
