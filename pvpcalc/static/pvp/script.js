@@ -1,11 +1,14 @@
 var checked = "";
-var player = "green";
 
 function play_green(id) {
+    
     nick = document.getElementById("nickview").value;
-    document.location.href = "game/" + id + "/" + nick;
-    // player = "green";
-    // checked = [];
+    document.location.href = "game/" + id + "/" + nick + "/" + "green";
+}
+
+function play_red(id) {
+    nick = document.getElementById("nickview").value;
+    document.location.href = "game/" + id + "/" + nick + "/" + "red";
 }
 
 function check(answer, id) {
@@ -13,9 +16,10 @@ function check(answer, id) {
     if (checked.includes(id)) {
         return;
     }
+    color = document.location.href.split('/')[6];
     if (attemp == answer) {
         checked += id;
-        if (player == "green") {
+        if (color == "green") {
             val = document.getElementById("scores-red").innerHTML;
             document.getElementById("scores-red").innerHTML = val - 1;
         }
